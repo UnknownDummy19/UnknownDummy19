@@ -1,0 +1,1 @@
+Services.StarterGui:SetCore("SendNotification", { Title = 'Test'; Text = Good? })  
