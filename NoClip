@@ -1,5 +1,3 @@
---Created By Unknown_Dummy19
-
 local Workspace = game:GetService("Workspace")
 local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
@@ -18,7 +16,7 @@ Noclip.Parent = game.CoreGui
 
 BG.Name = "BG"
 BG.Parent = Noclip
-BG.BackgroundColor3 = Color3.new(2.24, 2.24, 2.24)
+BG.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
 BG.BorderColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
 BG.BorderSizePixel = 2
 BG.Position = UDim2.new(0.149479166, 0, 0.82087779, 0)
@@ -28,8 +26,8 @@ BG.Draggable = true
 
 Title.Name = "Title"
 Title.Parent = BG
-Title.BackgroundColor3 = Color3.new(0.65, 0.65, 0.65)
-Title.BorderColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Title.BackgroundColor3 = Color3.new(0.266667, 0.00392157, 0.627451)
+Title.BorderColor3 = Color3.new(0.180392, 0, 0.431373)
 Title.BorderSizePixel = 2
 Title.Size = UDim2.new(0, 210, 0, 33)
 Title.Font = Enum.Font.Highway
@@ -37,21 +35,21 @@ Title.Text = "Noclip"
 Title.TextColor3 = Color3.new(1, 1, 1)
 Title.FontSize = Enum.FontSize.Size32
 Title.TextSize = 30
-Title.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Title.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
 Title.TextStrokeTransparency = 0
 
 Toggle.Parent = BG
-Toggle.BackgroundColor3 = Color3.new(0.45, 0.45, 0.45)
-Toggle.BorderColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Toggle.BackgroundColor3 = Color3.new(0.266667, 0.00392157, 0.627451)
+Toggle.BorderColor3 = Color3.new(0.180392, 0, 0.431373)
 Toggle.BorderSizePixel = 2
 Toggle.Position = UDim2.new(0.152380958, 0, 0.374192119, 0)
 Toggle.Size = UDim2.new(0, 146, 0, 36)
 Toggle.Font = Enum.Font.Highway
 Toggle.FontSize = Enum.FontSize.Size28
-Toggle.Text = "On/Off"
+Toggle.Text = "Toggle"
 Toggle.TextColor3 = Color3.new(1, 1, 1)
 Toggle.TextSize = 25
-Toggle.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Toggle.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
 Toggle.TextStrokeTransparency = 0
 
 StatusPF.Name = "StatusPF"
@@ -81,9 +79,24 @@ Status.Text = "off"
 Status.TextColor3 = Color3.new(0.666667, 0, 0)
 Status.TextScaled = true
 Status.TextSize = 14
-Status.TextStrokeColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Status.TextStrokeColor3 = Color3.new(0.180392, 0, 0.431373)
 Status.TextWrapped = true
 Status.TextXAlignment = Enum.TextXAlignment.Left
+
+Credit.Name = "Credit"
+Credit.Parent = BG
+Credit.BackgroundColor3 = Color3.new(1, 1, 1)
+Credit.BackgroundTransparency = 1
+Credit.Position = UDim2.new(0.195238099, 0, 0.866141737, 0)
+Credit.Size = UDim2.new(0, 128, 0, 17)
+Credit.Font = Enum.Font.SourceSans
+Credit.FontSize = Enum.FontSize.Size18
+Credit.Text = "Created by KingLuna"
+Credit.TextColor3 = Color3.new(1, 1, 1)
+Credit.TextSize = 16
+Credit.TextStrokeColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Credit.TextStrokeTransparency = 0
+Credit.TextWrapped = true
 
 Toggle.MouseButton1Click:connect(function()
 	if Status.Text == "off" then
@@ -108,19 +121,3 @@ Toggle.MouseButton1Click:connect(function()
 		Status.TextColor3 = Color3.new(170,0,0)
 	end
 end)
-  
-  local STARTERGUI = game:GetService("StarterGui")
-
-if game:GetService("ReplicatedStorage"):FindFirstChild("UnkN0wNDuM") then
-STARTERGUI:SetCore("SendNotification",{
-        Title = "Activated",
-        Text = "Script is already running",
-         Icon = "rbxassetid://14176955861",
-         Duration = 8
-    })
-return
-end
-
-local VdbwjS = Instance.new("StringValue",game:GetService("ReplicatedStorage")) 
-VdbwjS.Name = "UnkN0wNDuM" 
-  
